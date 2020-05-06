@@ -27,7 +27,7 @@ public class MovieController {
         }
     }
 
-    @PostMapping("/find")
+    @GetMapping("/find")
     public ResponseEntity<MovieInfo> find(@RequestParam String title) {
         Optional<MovieInfo> movieInfo = movieServiceImpl.findMovie(title);
         if (movieInfo.isPresent()) {
