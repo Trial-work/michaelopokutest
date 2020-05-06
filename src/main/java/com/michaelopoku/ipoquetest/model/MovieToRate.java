@@ -1,11 +1,11 @@
 package com.michaelopoku.ipoquetest.model;
 
-public class RatedMovie {
+public class MovieToRate {
 
     private final String name;
     private final int rating;
 
-    public RatedMovie(String name, int rating) {
+    public MovieToRate(String name, int rating) {
         this.name = name;
         this.rating = rating;
     }
